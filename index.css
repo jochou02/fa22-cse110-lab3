@@ -1,0 +1,101 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+/* General styles to apply to entire page */
+
+section {
+    padding: 30px 30px 30px 30px;
+    margin: 20px auto 20px auto;
+    border-radius: 7pt;
+    width: 25cm;
+    box-sizing: border-box;
+}
+
+/* Meeting Recording section */
+
+.meeting-recordings {
+    background-color: lightskyblue;
+    font-size: 1.3em;
+    border: 1px solid black;
+    min-width: none;
+    max-width: 30cm;
+    position: relative;
+}
+
+.recording-subtitle {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+video, audio {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Note Body section */
+
+.note-body {
+    background-color: hsl(304, 100%, 86%);
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-body:hover {
+    background-color: hsl(310, 88%, 62%);
+}
+
+.note-body h3 {
+    font-size: 1.5rem;
+}
+
+.list-container {
+    background-color: hsl(143, 50%, 65%);
+    width: 80%;
+}
+
+/* Random form section */
+
+.random-form {
+    font-family: 'Comforter Brush', cursive;
+    background-color: #FFAB91;
+}
+
+.form-message {
+    font-size: 1.4vh;
+}
+
+form:active {
+    color: grey;
+}
+
+/* Miscellaneous */
+
+.invisible-div {
+    display: none;
+}
+
+.grid-practice {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 15px;
+    justify-items: stretch;
+}
+
+/* Media Queries */
+
+@media (max-width: 26cm) {
+    header {
+        background-color: blue;
+    }
+}
+

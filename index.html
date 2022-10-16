@@ -4,35 +4,51 @@
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
     <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/pretty-office-part-5-reflection-style/256/Examples.png">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      header {
+        background-color: rgb(250, 83, 83);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 30px;
+        border-style: solid;
+        border-color: rgb(28, 110, 11);
+        border-width: 6px;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        height: 650px;
+        width: 25cm;
+        margin: auto;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <main>
 
       <header><div class="useless-div"><span class="useless-span"></span>
-        <h1>Team Dirty Birds - Chat Application Meeting #2</h1>
+        <h1 style="color:white;">Team Dirty Birds - Chat Application Meeting #2</h1>
         <img src="swe-meeting.jpg" alt="Meeting">
-        <h2>Topic: Brainstorming</h2>
-        <h3>October 4, 2022</h3>
-        <p>This meeting primarily covered the <em>motivation</em> behind the app, as well as some other <i>brainstorming</i> ideas.</p>
-        <nav>
-          <a href="/">Previous Meeting</a> |
-          <a href="/">Next Meeting</a> |
-          <a href="/">Resources</a>
-        </nav>
+        <h2 style="color:white;text-decoration: underline;">Topic: Brainstorming</h2>
+        <h3 style="color:white;">October 4, 2022</h3>
+        <p style="color:white;">This meeting primarily covered the <em>motivation</em> behind the app, as well as some other <i>brainstorming</i> ideas.</p>
       </div></header>
 
       <hr>
 
-      <section>
-        <p><b>Meeting Recording:</b></p>
+      <section class="meeting-recordings">
+        <p class="recording-subtitle"><b>Meeting Recording:</b></p>
         <video controls>
           <source src="video.mp4" type="video/mp4">
         </video>
-        <p><b>Meeting Audio Recording:</b></p>
+        <p class="recording-subtitle"><b>Meeting Audio Recording:</b></p>
         <audio controls>
           <source src="audio.mp3" type="audio/mpeg">
         </audio>
-        <p><b>Meeting Transcript:</b></p>
+        <p class="recording-subtitle"><b>Meeting Transcript:</b></p>
         <details>
           <summary>Spoiler</summary>
           <p>Blah blah blah this meeting was wayyyyyyyyy too long!</p>
@@ -41,54 +57,64 @@
 
       <hr>
     
-      <section>
-        <h3>Attendance List:</h3>
-        <ul>
-          <li>Joe Biden</li>
-          <li>Donald Trump</li>
-          <li>LeBron James</li>
-          <li>Gordon Ramsay</li>
-          <li>George Washington</li>
-        </ul>
+      <section class="note-body">
+        <div class="list-container">
+          <h3>Attendance List:</h3>
+          <ul>
+            <li>Joe Biden</li>
+            <li>Donald Trump</li>
+            <li>LeBron James</li>
+            <li>Gordon Ramsay</li>
+            <li>George Washington</li>
+          </ul>
+        </div>
 
-        <h3>Agenda:</h3>
-        <ol>
-          <li>Application Intro/Purpose/Motivation</li>
-          <li><b>Application Names</b></li>
-          <li>Application Themes</li>
-          <li>Application Features</li>
-          <li>Application Timeline</li>
-          <li>Closing Remarks</li>
-        </ol>
+        <div class="list-container">
+          <h3>Agenda:</h3>
+          <ol>
+            <li>Application Intro/Purpose/Motivation</li>
+            <li><b>Application Names</b></li>
+            <li>Application Themes</li>
+            <li>Application Features</li>
+            <li>Application Timeline</li>
+            <li>Closing Remarks</li>
+          </ol>
+        </div>
 
-        <h3>Unfinished Business:</h3>
-        <ul>
-          <li>Naming of the Application</li>
-          <li>Narrow down potential themes</li>
-          <li>Finalize features</li>
-        </ul>
+        <div class="list-container">
+          <h3>Unfinished Business:</h3>
+          <ul>
+            <li>Naming of the Application</li>
+            <li>Narrow down potential themes</li>
+            <li>Finalize features</li>
+          </ul>
+        </div>
 
-        <h3>New Business (Next meeting):</h3>
-        <ul>
-          <li>Finalize application name</li>
-          <li>Finalize application theme(s)</li>
-          <li>Finalize application timeline</li>
-          <li>Delegate tasks</li>
-          <li>Other sprint planning</li>
-        </ul>
+        <div class="list-container">
+          <h3>New Business (Next meeting):</h3>
+          <ul>
+            <li>Finalize application name</li>
+            <li>Finalize application theme(s)</li>
+            <li>Finalize application timeline</li>
+            <li>Delegate tasks</li>
+            <li>Other sprint planning</li>
+          </ul>
+        </div>
 
-        <h3>Misc Comments/Questions/Concerns</h3>
-        <ul>
-          <li><a href="https://www.websiteplanet.com/blog/best-chat-apps/">Some ideas</a></li>
-          <li>LeBron James only wants backend</li>
-          <li>Joe Biden only wants frontend</li>
-        </ul>
+        <div class="list-container">
+          <h3>Misc Comments/Questions/Concerns</h3>
+          <ul>
+            <li><a href="https://www.websiteplanet.com/blog/best-chat-apps/">Some ideas</a></li>
+            <li>LeBron James only wants backend</li>
+            <li>Joe Biden only wants frontend</li>
+          </ul>
+        </div>
       </section>  
 
       <hr>
 
-      <section>
-        <p>Here is a random survey for research purposes. Please fill it out ASAP!</p>
+      <section class="random-form">
+        <p class="form-message">Here is a random survey for research purposes. Please fill it out ASAP!</p>
         <p>It is due <strong>3 days</strong> after this meeting!</p>
         <form>
           <fieldset>
@@ -148,6 +174,16 @@
       </section>
 
       <hr>
+
+      <div class="invisible-div">
+        Test
+      </div>
+
+      <div class="grid-practice">
+        <div style="background-color: red;">Test</div>
+        <div style="background-color: blue;">Test</div>
+        <div style="background-color: green;">Test</div>
+      </div>
 
       <footer>
         <h3>October 4, 2022</h3>
