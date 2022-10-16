@@ -6,12 +6,15 @@
 
 /* General styles to apply to entire page */
 
+* {
+    box-sizing: border-box;
+}
+
 section {
     padding: 30px 30px 30px 30px;
     margin: 20px auto 20px auto;
     border-radius: 7pt;
     width: 25cm;
-    box-sizing: border-box;
 }
 
 /* Meeting Recording section */
@@ -84,7 +87,7 @@ form:active {
     display: none;
 }
 
-.grid-practice {
+#grid-practice {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 15px;
