@@ -61,7 +61,7 @@ video, audio {
     font-size: 1.5rem;
 }
 
-.list-container {
+.note-body > div {
     background-color: hsl(143, 50%, 65%);
     width: 80%;
 }
@@ -92,6 +92,10 @@ form:active {
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 15px;
     justify-items: stretch;
+}
+
+a[href$=".org"] {
+    color: red;
 }
 
 /* Media Queries */
